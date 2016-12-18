@@ -6,20 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇文章 | Lemon</title>
+  <title>Javascript DOM编程艺术读书笔记 | Lemon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="经过两天的努力，博客终于可以写了！不容易呀hello world的文档暂时不要删除，当做模板，以后写文章方便很多中间遇到很多问题　　1找不到repo　　　在deploy_git的文件夹下执行：git init　　2域名解析的时候CNAME文件什么？　　　在source文件夹下，直接touch CNAME,然后vim CNAME填入相应的内容：wq保存退出　　3markdown如何打出空格进行排版">
+  <meta name="description" content="基础知识什么是DOM：　　document object module，文档编程模型　　一个与系统平台和编程语言无关的接口，　　程序和脚本可以通过这个接口动态的访问和修改文档的内容，结构和样式在javascript中，所有的变量实际上都是某种类型的对象
+对象的分类：　　１内建对象：比如数组　　２宿主对象：比如BOM和DOM　　３用户自定义对象
+DOM文档的结点类型　　１元素结点　　２文本结点　　３">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇文章">
-<meta property="og:url" content="http://yoursite.com/2016/11/15/我的第一篇文章/index.html">
+<meta property="og:title" content="Javascript DOM编程艺术读书笔记">
+<meta property="og:url" content="http://yoursite.com/2016/11/18/Javascript DOM编程艺术读书笔记/index.html">
 <meta property="og:site_name" content="Lemon">
-<meta property="og:description" content="经过两天的努力，博客终于可以写了！不容易呀hello world的文档暂时不要删除，当做模板，以后写文章方便很多中间遇到很多问题　　1找不到repo　　　在deploy_git的文件夹下执行：git init　　2域名解析的时候CNAME文件什么？　　　在source文件夹下，直接touch CNAME,然后vim CNAME填入相应的内容：wq保存退出　　3markdown如何打出空格进行排版">
-<meta property="og:image" content="http://yoursite.com/img/contact-bg.jpg">
-<meta property="og:updated_time" content="2016-11-16T07:47:26.514Z">
+<meta property="og:description" content="基础知识什么是DOM：　　document object module，文档编程模型　　一个与系统平台和编程语言无关的接口，　　程序和脚本可以通过这个接口动态的访问和修改文档的内容，结构和样式在javascript中，所有的变量实际上都是某种类型的对象
+对象的分类：　　１内建对象：比如数组　　２宿主对象：比如BOM和DOM　　３用户自定义对象
+DOM文档的结点类型　　１元素结点　　２文本结点　　３">
+<meta property="og:updated_time" content="2016-11-18T13:04:35.281Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇文章">
-<meta name="twitter:description" content="经过两天的努力，博客终于可以写了！不容易呀hello world的文档暂时不要删除，当做模板，以后写文章方便很多中间遇到很多问题　　1找不到repo　　　在deploy_git的文件夹下执行：git init　　2域名解析的时候CNAME文件什么？　　　在source文件夹下，直接touch CNAME,然后vim CNAME填入相应的内容：wq保存退出　　3markdown如何打出空格进行排版">
-<meta name="twitter:image" content="http://yoursite.com/img/contact-bg.jpg">
+<meta name="twitter:title" content="Javascript DOM编程艺术读书笔记">
+<meta name="twitter:description" content="基础知识什么是DOM：　　document object module，文档编程模型　　一个与系统平台和编程语言无关的接口，　　程序和脚本可以通过这个接口动态的访问和修改文档的内容，结构和样式在javascript中，所有的变量实际上都是某种类型的对象
+对象的分类：　　１内建对象：比如数组　　２宿主对象：比如BOM和DOM　　３用户自定义对象
+DOM文档的结点类型　　１元素结点　　２文本结点　　３">
   
     <link rel="alternative" href="/atom.xml" title="Lemon" type="application/atom+xml">
   
@@ -139,7 +143,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-我的第一篇文章" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Javascript DOM编程艺术读书笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -149,7 +153,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇文章
+      Javascript DOM编程艺术读书笔记
     </h1>
   
 
@@ -157,21 +161,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="img/contact-bg.jpg" alt="背景"><br>经过两天的努力，博客终于可以写了！不容易呀<br>hello world的文档暂时不要删除，当做模板，以后写文章方便很多<br>中间遇到很多问题<br>　　1找不到repo<br>　　　在deploy_git的文件夹下执行：git init<br>　　2域名解析的时候CNAME文件什么？<br>　　　在source文件夹下，直接touch CNAME,然后vim CNAME填入相应的内容：wq保存退出<br>　　3markdown如何打出空格进行排版<br>　　　shift+空格，变成全角，被认为是两个字，所以可以进行排版<br>有待解决的问题是：1自定义主题，改进主题<br>　　　　　　　　　2增加多个页面进行跳转<br>　　　　　　　　　3域名解析什么鬼<br>　　　　　　　　　4如何添加多说评论插件<br>　　　　　　　　　5如何在博客页面上添加图片</p>
+        <h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="什么是DOM："><a href="#什么是DOM：" class="headerlink" title="什么是DOM："></a>什么是DOM：</h3><p>　　document object module，文档编程模型<br>　　一个与系统平台和编程语言无关的接口，<br>　　程序和脚本可以通过这个接口动态的访问和修改文档的内容，结构和样式<br>在javascript中，所有的变量实际上都是某种类型的对象</p>
+<h3 id="对象的分类："><a href="#对象的分类：" class="headerlink" title="对象的分类："></a>对象的分类：</h3><p>　　１内建对象：比如数组<br>　　２宿主对象：比如BOM和DOM<br>　　３用户自定义对象</p>
+<h3 id="DOM文档的结点类型"><a href="#DOM文档的结点类型" class="headerlink" title="DOM文档的结点类型"></a>DOM文档的结点类型</h3><p>　　１元素结点<br>　　２文本结点<br>　　３属性结点</p>
+<h3 id="什么是平稳退化"><a href="#什么是平稳退化" class="headerlink" title="什么是平稳退化"></a>什么是平稳退化</h3><p>　　让网站的访问者在不支持javascript的浏览器中，<br>　　或者在被禁用javascript的浏览器中能够正常的访问网页<br>　　一个经典的平稳退化的例子<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> popUp(winURL)&#123;</div><div class="line">	window.open(winURL,<span class="string">"popup"</span>,<span class="string">"width=320,height=240"</span>);</div><div class="line">&#125;</div><div class="line">&lt;a href=<span class="string">"http://www.bestlemon.com"</span> onclick=<span class="string">"popUp(this.href);return false;"</span>&gt;example&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="什么是渐进增强"><a href="#什么是渐进增强" class="headerlink" title="什么是渐进增强"></a>什么是渐进增强</h3><p>　　用一些额外的信息层去包裹原始数据<br>　　网页设计人员流传着这样一句话，内容就是一切，这话不完全对<br>　　应该说是：标记良好的内容就是一切<br>　　在给内容加上各种标记后，就可以使用各种CSS指令控制内容的显示效果　</p>
+<h3 id="从DOM角度如何提高性能"><a href="#从DOM角度如何提高性能" class="headerlink" title="从DOM角度如何提高性能"></a>从DOM角度如何提高性能</h3><p>　　1尽量少的访问DOM和减少标记<br>　　2合并和放置脚本：多个脚本放置在一个文件，<br>　　　　　　　　　　把所有的<script></script>放到文件的末尾，之前<br>　　3压缩脚本：不必要的字节，如空格和注释，统统删掉　　</p>
+<h3 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h3><p>　　对页面的请求以异步的方式发送到服务器。<br>　　而服务器不会用整个页面来响应请求，它会在后台处理请求，<br>　　与此同时用户还能继续浏览页面并与页面交互<br>　　Ajax技术的核心是XMLHttpRequest对象，这个对象充当浏览器中的脚本（客户端）与服务器之间中间人的角色</p>
+<h3 id="Hijax"><a href="#Hijax" class="headerlink" title="Hijax"></a>Hijax</h3><p>　　渐进增强的使用Ajax<br>　　拦截登陆表单的请求，让 XMLHttpRequest请求代为发送<br>　　如果用户禁用了javascript，登陆表单照样让用户登陆，只不过花的时间要长一些</p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/11/15/我的第一篇文章/" class="archive-article-date">
-  	<time datetime="2016-11-15T05:32:07.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-15</time>
+      <a href="/2016/11/18/Javascript DOM编程艺术读书笔记/" class="archive-article-date">
+  	<time datetime="2016-11-18T13:10:45.068Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
 </a>
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-	</div>
-
       
 
       <div class="clearfix"></div>
@@ -182,18 +188,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/11/18/数据类型和引用类型之间的区别/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/12/18/使用数学公式/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          数据类型和引用类型之间的差别
+          (no title)
         
       </div>
     </a>
   
   
-    <a href="/2016/11/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2016/11/18/数据类型和引用类型之间的区别/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数据类型和引用类型之间的差别</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -227,7 +233,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="我的第一篇文章" data-title="我的第一篇文章" data-url="http://yoursite.com/2016/11/15/我的第一篇文章/"></div>
+	<div class="ds-thread" data-thread-key="Javascript DOM编程艺术读书笔记" data-title="Javascript DOM编程艺术读书笔记" data-url="http://yoursite.com/2016/11/18/Javascript DOM编程艺术读书笔记/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

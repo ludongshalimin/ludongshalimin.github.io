@@ -135,6 +135,155 @@
       <div class="body-wrap">
         
   
+    <article id="post-使用数学公式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="利用markdown插入数学公式"><a href="#利用markdown插入数学公式" class="headerlink" title="利用markdown插入数学公式"></a>利用markdown插入数学公式</h1><p>编辑器采用markdownpad </p>
+<p><strong>MathJax是一个显示数学公式的开源Javascript引擎库*</strong> </p>
+<p>使用Mathjax很简单，只需要引入MathJax.js库，然后交给MathJax处理<br><br>可以去<code>https://github.com/mathjax/MataJax</code>下载最新的MathJax到自己的网站，也可以使用MathJax提供的CDN直接使用</p>
+<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&quot;&gt;&lt;/script&gt;</code></p>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<p><strong>公式代码</strong></p>
+<p><code>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</code></p>
+<p>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
+<p><strong>公式代码</strong></p>
+<p><code>\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)</code></p>
+<p>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/12/18/使用数学公式/" class="archive-article-date">
+  	<time datetime="2016-12-18T11:30:34.693Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-18</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Javascript DOM编程艺术读书笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/18/Javascript DOM编程艺术读书笔记/">Javascript DOM编程艺术读书笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="什么是DOM："><a href="#什么是DOM：" class="headerlink" title="什么是DOM："></a>什么是DOM：</h3><p>　　document object module，文档编程模型<br>　　一个与系统平台和编程语言无关的接口，<br>　　程序和脚本可以通过这个接口动态的访问和修改文档的内容，结构和样式<br>在javascript中，所有的变量实际上都是某种类型的对象</p>
+<h3 id="对象的分类："><a href="#对象的分类：" class="headerlink" title="对象的分类："></a>对象的分类：</h3><p>　　１内建对象：比如数组<br>　　２宿主对象：比如BOM和DOM<br>　　３用户自定义对象</p>
+<h3 id="DOM文档的结点类型"><a href="#DOM文档的结点类型" class="headerlink" title="DOM文档的结点类型"></a>DOM文档的结点类型</h3><p>　　１元素结点<br>　　２文本结点<br>　　３属性结点</p>
+<h3 id="什么是平稳退化"><a href="#什么是平稳退化" class="headerlink" title="什么是平稳退化"></a>什么是平稳退化</h3><p>　　让网站的访问者在不支持javascript的浏览器中，<br>　　或者在被禁用javascript的浏览器中能够正常的访问网页<br>　　一个经典的平稳退化的例子<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> popUp(winURL)&#123;</div><div class="line">	window.open(winURL,<span class="string">"popup"</span>,<span class="string">"width=320,height=240"</span>);</div><div class="line">&#125;</div><div class="line">&lt;a href=<span class="string">"http://www.bestlemon.com"</span> onclick=<span class="string">"popUp(this.href);return false;"</span>&gt;example&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="什么是渐进增强"><a href="#什么是渐进增强" class="headerlink" title="什么是渐进增强"></a>什么是渐进增强</h3><p>　　用一些额外的信息层去包裹原始数据<br>　　网页设计人员流传着这样一句话，内容就是一切，这话不完全对<br>　　应该说是：标记良好的内容就是一切<br>　　在给内容加上各种标记后，就可以使用各种CSS指令控制内容的显示效果　</p>
+<h3 id="从DOM角度如何提高性能"><a href="#从DOM角度如何提高性能" class="headerlink" title="从DOM角度如何提高性能"></a>从DOM角度如何提高性能</h3><p>　　1尽量少的访问DOM和减少标记<br>　　2合并和放置脚本：多个脚本放置在一个文件，<br>　　　　　　　　　　把所有的<script></script>放到文件的末尾，之前<br>　　3压缩脚本：不必要的字节，如空格和注释，统统删掉　　</p>
+<h3 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h3><p>　　对页面的请求以异步的方式发送到服务器。<br>　　而服务器不会用整个页面来响应请求，它会在后台处理请求，<br>　　与此同时用户还能继续浏览页面并与页面交互<br>　　Ajax技术的核心是XMLHttpRequest对象，这个对象充当浏览器中的脚本（客户端）与服务器之间中间人的角色</p>
+<h3 id="Hijax"><a href="#Hijax" class="headerlink" title="Hijax"></a>Hijax</h3><p>　　渐进增强的使用Ajax<br>　　拦截登陆表单的请求，让 XMLHttpRequest请求代为发送<br>　　如果用户禁用了javascript，登陆表单照样让用户登陆，只不过花的时间要长一些</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/18/Javascript DOM编程艺术读书笔记/" class="archive-article-date">
+  	<time datetime="2016-11-18T13:10:45.068Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-数据类型和引用类型之间的区别" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/18/数据类型和引用类型之间的区别/">数据类型和引用类型之间的差别</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="五种基本数据类型：Undefined-，Null，-Boolean，-Number-，String"><a href="#五种基本数据类型：Undefined-，Null，-Boolean，-Number-，String" class="headerlink" title="五种基本数据类型：Undefined ，Null， Boolean， Number ，String"></a>五种基本数据类型：Undefined ，Null， Boolean， Number ，String</h3><h3 id="五种引用类型：-Object类型，Array类型，Data类型，RegExp类型，Function类型"><a href="#五种引用类型：-Object类型，Array类型，Data类型，RegExp类型，Function类型" class="headerlink" title="五种引用类型： Object类型，Array类型，Data类型，RegExp类型，Function类型"></a>五种引用类型： Object类型，Array类型，Data类型，RegExp类型，Function类型</h3><h3 id="什么是基本类型的值，什么引用类型的值"><a href="#什么是基本类型的值，什么引用类型的值" class="headerlink" title="什么是基本类型的值，什么引用类型的值"></a>什么是基本类型的值，什么引用类型的值</h3><p>基本类型的值就是由基本类型所生成的变量<br>引用类型的值是指由引用类型所生成的变量<br>例如<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var intNum1=55;//intNum就是由Number数据类型的值，它是不可变的</div><div class="line">var intNum2=intNum1;</div><div class="line">var person1=new Object(); //person1和person2是引用类型Object的值，它是可变的</div><div class="line">var person2=person1;</div><div class="line">person1.name=<span class="string">"sasa"</span>;</div><div class="line">alert(person2.name); //<span class="string">"sasa"</span></div></pre></td></tr></table></figure></p>
+<p>基本类型：指的是保存在栈内存中的简单数据段<br>引用类型：指的是那些保存在堆内存中的对象，<br>　　　　　换句话说，变量名实际上是一个指针，而这个指针指向的位置就是对象的位置</p>
+<h3 id="两种不同的访问方式"><a href="#两种不同的访问方式" class="headerlink" title="两种不同的访问方式"></a>两种不同的访问方式</h3><p>　基本类型：按值访问，操作的是它们的实际值<br>　引用类型：按引用访问，当查询时，需要先从栈中读取内存地址，<br>　　　　　　然后按照指针所指的地方，找到堆内存里面的值</p>
+<h3 id="使用特点"><a href="#使用特点" class="headerlink" title="使用特点"></a>使用特点</h3><p>　　１动态的属性<br>　　　　基本类型的值是不可以变得<br>        引用类型的值是可以变的，可以为引用类型添加属性和方法，也可以删除属性和方法<br>　　２复制变量的值<br>　　　　如果从一个变量向另一个复制基本类型的值，会在变量对象上创建一个新值，<br>　　　　然后将该值复制到尾新变量分配的位置上<br>　　　　如果从一个变量向另一个变量复制引用类型的值，同样也会将存储在变量对象中的值复<br>　　　　制一份放到为新变量分配的内存空间中。不同的是，这个值实际上是一个指针，而这个<br>　　　　指针指向存储在堆中的一个对象。复制结束后，两个变量实际上将引用同一个对象。因<br>　　　　此改变其中一个变量，就会影响到另一个变量<br>　　３传递参数<br>　　　　ECMAScript中所有函数的参数，都是按值传递的。也就是，把函数外部的值复制给函数<br>　　　　内部的参数，就是把值从一个变量复制到另一个变量一样。基本类型的值传递如同基本<br>　　　　类型变量的复制一样。引用类型值的传递，则如同引用类型变量的复制一样。<br>        例如<br>        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> addTen(num)&#123;</div><div class="line">	num+=10;</div><div class="line">	<span class="built_in">return</span> num;</div><div class="line">&#125;</div><div class="line">var count=10;</div><div class="line">var result=addTen(count);</div><div class="line">alert(count);   //10,没有变化</div><div class="line">alert(result);  //20</div><div class="line">//////////</div><div class="line"><span class="keyword">function</span> <span class="built_in">set</span>Name(obj)&#123;</div><div class="line">	obj.name=<span class="string">"sasa"</span>;</div><div class="line">	obj=new Object();  //为了证明是按照值传递的，而不是引用传递的</div><div class="line">	obj.name=<span class="string">"haha"</span>;</div><div class="line">&#125;</div><div class="line">var person=new Object();</div><div class="line"><span class="built_in">set</span>Name(person);</div><div class="line">alert(person.name)  //sasa</div></pre></td></tr></table></figure></p>
+<pre><code>分析：上面例子可以看出来，如果person是按照引用传递的，那么person就会自动被修
+</code></pre><p>　　　　　　　改为指向其name属性值为”haha”。但是，当接下来访问person.name时，显示的仍<br>　　　　　　　然是“sasa”。这说明即使在函数内部修改了参数的值，但原始的引用仍然保持不<br>　　　　　　　变。实际上，当函数内部重写obj时，这个变量的引用的就是一个局部对象了。而<br>　　　　　　　这个局部对象会在函数执行完后立即销毁。</p>
+<h3 id="判断类型的最佳的使用方法"><a href="#判断类型的最佳的使用方法" class="headerlink" title="判断类型的最佳的使用方法"></a>判断类型的最佳的使用方法</h3><p>1typedef操作符是判断基本类型的最佳工具<br>2如果变量是NULL或者对象，typedef将返回“object”<br>3instanceof用于检测引用类型，可以检测到具体的，它是什么类型的实例<br>4如果变量是给定类型的实例，instanceof操作符返回true</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/18/数据类型和引用类型之间的区别/" class="archive-article-date">
+  	<time datetime="2016-11-18T13:10:45.068Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-我的第一篇文章" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
